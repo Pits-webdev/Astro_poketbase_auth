@@ -1,0 +1,9 @@
+---
+import { actions, getActionProps } from "astro:actions";
+---
+
+<form method='POST'>
+  <input {...getActionProps(actions.logout)} />
+
+  <button class='text-white hover:text-orange-400'>Logout</button>
+</form>

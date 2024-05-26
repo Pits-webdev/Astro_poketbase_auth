@@ -1,0 +1,13 @@
+---
+import LogoutBtn from "./LogoutBtn.astro";
+
+const locals: any = Astro.locals;
+---
+
+<nav class='w-full h-20 flex gap-16 items-center justify-center'>
+  <a href='/'>Home</a>
+
+  {locals.pb.authStore.isValid ? <LogoutBtn /> : <a href='/login'>Login</a>}
+
+  <a href='/register'>Register</a>
+</nav>

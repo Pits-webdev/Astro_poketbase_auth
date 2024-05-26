@@ -1,0 +1,13 @@
+:root {
+  --background: #181818;
+  --accent: #6eb314;
+  --gray: hsl(0, 0%, 60%);
+}
+
+body {
+  @apply bg-background  text-white;
+}
+
+input {
+  @apply text-neutral-800;
+}
